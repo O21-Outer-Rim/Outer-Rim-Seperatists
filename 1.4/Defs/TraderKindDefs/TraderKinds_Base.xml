@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<TraderKindDef ParentName="OuterRim_TraderBaseBase">
+		<defName>OuterRim_Separatist_Base</defName>
+		<faction>OuterRim_Separatists</faction>
+		<stockGenerators>
+			<!-- Weapons -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>OuterRim_SeparatistWeapons</tradeTag>
+				<thingDefCountRange>3~4</thingDefCountRange>
+				<countRange>3~6</countRange>
+			</li>
+			<!-- <li Class="StockGenerator_SingleDef">
+				<thingDef>OuterRim_ResearchCore_Separatists</thingDef>
+				<countRange>-1~1</countRange>
+			</li> -->
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef ParentName="OuterRim_TraderCaravanBase">
+		<defName>OuterRim_Separatist_Carvan</defName>
+		<faction>OuterRim_Separatists</faction>
+		<stockGenerators>
+			<!-- Weapons -->
+			<li Class="StockGenerator_Tag">
+				<tradeTag>OuterRim_SeparatistWeapons</tradeTag>
+				<thingDefCountRange>3~4</thingDefCountRange>
+				<countRange>3~6</countRange>
+			</li>
+			<!-- <li Class="StockGenerator_SingleDef">
+				<thingDef>OuterRim_ResearchCore_Separatists</thingDef>
+				<countRange>-1~1</countRange>
+			</li> -->
+		</stockGenerators>
+	</TraderKindDef>
+
+	<TraderKindDef ParentName="OuterRim_TraderVisitorBase">
+		<defName>OuterRim_Separatist_Visitor</defName>
+		<faction>OuterRim_Separatists</faction>
+		<stockGenerators>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>OuterRim_SeparatistWeapons</tradeTag>
+				<thingDefCountRange>1~3</thingDefCountRange>
+				<countRange>1~3</countRange>
+			</li>
+			<!-- <li Class="StockGenerator_SingleDef">
+				<thingDef>OuterRim_ResearchCore_Separatists</thingDef>
+				<countRange>-1~1</countRange>
+			</li> -->
+		</stockGenerators>
+	</TraderKindDef>
+
+</Defs>

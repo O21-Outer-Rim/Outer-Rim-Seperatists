@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimMeleeBase_Sharp">
+		<defName>OuterRim_BXVibroblade</defName>
+		<label>bx vibroblade</label>
+		<description>A vibroblade (also styled as vibro-blade) was a bladed knife used for basic utility needs or as a melee weapon. This variant was used by BX-series droid commandos during the Clone Wars</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>OuterRim/Weapons/BXVibrosword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedAngleOffset>-35</equippedAngleOffset>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<costList>
+			<OuterRim_Durasteel>35</OuterRim_Durasteel>
+			<OuterRim_ComponentHypertech>2</OuterRim_ComponentHypertech>
+		</costList>
+		<weaponTags>
+			<li>ORVibroweapon</li>
+			<li>ORSeparatistBlade</li>
+			<li>ORBXCommando</li>
+			<li>ORMagnaguardDroid</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OuterRim_SeparatistWeapons</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>1.2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+</Defs>

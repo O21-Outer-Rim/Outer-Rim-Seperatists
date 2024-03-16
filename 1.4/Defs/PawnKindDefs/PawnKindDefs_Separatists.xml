@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<PawnKindDef Name="BaseConfederacyDroidPawn" Abstract="True">
+		<backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>true</isFighter>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2</max>
+		</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>OuterRimDroidBackstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelMoney>
+			<min>300</min>
+			<max>1200</max>
+		</apparelMoney>
+		<apparelTags Inherit="false">
+			<li>DroidArmor</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>OuterRim_DroidArmorModule</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<stuff>OuterRim_Durasteel</stuff>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>
+			<min>40000</min>
+			<max>40000</max>
+		</weaponMoney>
+		<techHediffsMoney>
+			<min>12000</min>
+			<max>20000</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0</techHediffsChance>
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Asimov_Chargepack</thingDef>
+					<countRange>3</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>10~20</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseConfederacyDroidPawn">
+		<defName>OuterRim_Sep_Trader</defName>
+		<label>T-Series Trader</label>
+		<labelPlural>T-Series Traders</labelPlural>
+		<defaultFactionType>OuterRim_Separatists</defaultFactionType>
+		<race>OuterRim_TacticalDroid</race>
+		<trader>True</trader>
+		<isFighter>true</isFighter>
+		<weaponTags>
+			<li>ORSeparatistPistol</li>
+		</weaponTags>
+		<combatPower>80</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseConfederacyDroidPawn">
+		<defName>OuterRim_Sep_B1Droid</defName>
+		<label>Battle Droid</label>
+		<labelPlural>Battle Droids</labelPlural>
+		<defaultFactionType>OuterRim_Separatists</defaultFactionType>
+		<race>OuterRim_BattleDroid</race>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORB1BattleDroid</li>
+		</weaponTags>
+		<combatPower>120</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseConfederacyDroidPawn">
+		<defName>OuterRim_Sep_B2Droid</defName>
+		<label>Super Battle Droid</label>
+		<labelPlural>Super Battle Droids</labelPlural>
+		<defaultFactionType>OuterRim_Separatists</defaultFactionType>
+		<race>OuterRim_SuperBattleDroid</race>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false" />
+		<apparelRequired>
+			<li>OuterRim_DroidWeapon_WristBlaster</li>
+		</apparelRequired>
+		<combatPower>140</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseConfederacyDroidPawn">
+		<defName>OuterRim_Sep_DestroyerDroid</defName>
+		<label>Destroyer Droid</label>
+		<labelPlural>Destroyer Droids</labelPlural>
+		<defaultFactionType>OuterRim_Separatists</defaultFactionType>
+		<race>OuterRim_DestroyerDroid</race>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false" />
+		<apparelRequired>
+			<li>OuterRim_DroidWeapon_TwinWristBlaster</li>
+			<li>OuterRim_DroidDeflectorShield</li>
+		</apparelRequired>
+		<combatPower>160</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>OuterRim/Droid/Droideka/Droideka</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseConfederacyDroidPawn">
+		<defName>OuterRim_Sep_CrabDroid</defName>
+		<label>Crab Droid</label>
+		<labelPlural>Crab Droids</labelPlural>
+		<defaultFactionType>OuterRim_Separatists</defaultFactionType>
+		<race>OuterRim_MuckrakerDroid</race>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false" />
+		<apparelRequired>
+			<li>OuterRim_DroidWeapon_BlasterCannon</li>
+		</apparelRequired>
+		<combatPower>160</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>OuterRim/Droid/Muckraker/CrabDroid</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.7</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseConfederacyDroidPawn">
+		<defName>OuterRim_Sep_BXDroid</defName>
+		<label>Commando Droid</label>
+		<labelPlural>Commando Droids</labelPlural>
+		<defaultFactionType>OuterRim_Separatists</defaultFactionType>
+		<race>OuterRim_CommandoDroid</race>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORBXCommando</li>
+		</weaponTags>
+		<combatPower>120</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseConfederacyDroidPawn">
+		<defName>OuterRim_Sep_TacticalDroid</defName>
+		<label>Tactical Droid</label>
+		<labelPlural>Tactical Droids</labelPlural>
+		<defaultFactionType>OuterRim_Separatists</defaultFactionType>
+		<race>OuterRim_TacticalDroid</race>
+		<isFighter>true</isFighter>
+		<weaponTags Inherit="false">
+			<li>ORSeparatistPistol</li>
+		</weaponTags>
+		<combatPower>170</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseConfederacyDroidPawn">
+		<defName>OuterRim_Sep_SuperTactical</defName>
+		<label>Super Tactical Droid</label>
+		<labelPlural>Super Tactical Droids</labelPlural>
+		<defaultFactionType>OuterRim_Separatists</defaultFactionType>
+		<race>OuterRim_SuperTacticalDroid</race>
+		<isFighter>true</isFighter>
+		<factionLeader>true</factionLeader>
+		<weaponTags Inherit="false">
+			<li>ORSeparatistPistol</li>
+		</weaponTags>
+		<combatPower>200</combatPower>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_MercenaryEliteTierBase">
+		<defName>OuterRim_Sep_General</defName>
+		<label>general</label>
+		<labelPlural>generals</labelPlural>
+		<combatPower>200</combatPower>
+		<factionLeader>true</factionLeader>
+		<minGenerationAge>30</minGenerationAge>
+		<defaultFactionType>OuterRim_Separatists</defaultFactionType>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">1.0</Baseliner>
+				<OuterRim_Abednedo MayRequire="Neronix17.OuterRim.GalacticDiversity">0.1</OuterRim_Abednedo>
+				<OuterRim_Aqualish MayRequire="Neronix17.OuterRim.GalacticDiversity">0.1</OuterRim_Aqualish>
+				<OuterRim_Duros MayRequire="Neronix17.OuterRim.GalacticDiversity">0.1</OuterRim_Duros>
+				<OuterRim_Iridonian MayRequire="Neronix17.OuterRim.GalacticDiversity">0.1</OuterRim_Iridonian>
+				<OuterRim_Miraluka MayRequire="Neronix17.OuterRim.GalacticDiversity">0.05</OuterRim_Miraluka>
+				<OuterRim_Neimoidian MayRequire="Neronix17.OuterRim.GalacticDiversity">0.1</OuterRim_Neimoidian>
+				<OuterRim_Nikto MayRequire="Neronix17.OuterRim.GalacticDiversity">0.1</OuterRim_Nikto>
+				<OuterRim_Quarren MayRequire="Neronix17.OuterRim.GalacticDiversity">0.1</OuterRim_Quarren>
+				<OuterRim_Selkath MayRequire="Neronix17.OuterRim.GalacticDiversity">0.1</OuterRim_Selkath>
+				<OuterRim_Trandoshan MayRequire="Neronix17.OuterRim.GalacticDiversity">0.1</OuterRim_Trandoshan>
+				<OuterRim_Umbaran MayRequire="Neronix17.OuterRim.GalacticDiversity">0.1</OuterRim_Umbaran>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+</Defs>

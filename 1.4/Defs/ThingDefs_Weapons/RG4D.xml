@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimBlasterBase_Pistol">
+		<defName>OuterRim_RG4DBlaster</defName>
+		<label>rg4d blaster</label>
+		<description>A model of blaster pistol used during the Clone Wars, often carried by command Battle Droids.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>OuterRim/Weapons/RG4DBlaster</texPath>
+		</graphicData>
+		<weaponTags>
+			<li>ORSeparatistAny</li>
+			<li>ORSeparatistPistol</li>
+			<li>ORB1BattleDroid</li>
+			<li>ORB1BattleDroidPistol</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OuterRim_SeparatistWeapons</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OuterRim_Bullet_PistolRed</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>18</range>
+				<soundCast>OuterRim_Shot_BlasterBolt</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>OuterRim_Bullet_RG4DBlaster</defName>
+		<label>blaster bolt</label>
+		<graphicData>
+			<texPath>OuterRim/Projectile/BlasterBolt_Red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>OuterRim_Blaster</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
+</Defs>

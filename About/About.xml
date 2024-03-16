@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Outer Rim - Separatists</name>
+	<description>Outer Rim module adding the Confederacy of Independent Systems faction and equipment.</description>
+	<author>Neronix17</author>
+	<packageId>Neronix17.OuterRim.Separatists</packageId>
+	<url>https://www.patreon.com/neronix17</url>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>Neronix17.OuterRim.Core</packageId>
+			<displayName>Outer Rim - Core</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Neronix17.OuterRim.DroidDepot</packageId>
+			<displayName>Outer Rim - Droid Depot</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3096501398</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Neronix17.OuterRim.Core</li>
+		<li>Neronix17.OuterRim.DroidDepot</li>
+		<li>Neronix17.OuterRim.GalacticDiversity</li>
+	</loadAfter>
+</ModMetaData>

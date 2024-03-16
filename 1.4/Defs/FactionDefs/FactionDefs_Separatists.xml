@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>OuterRim_Separatists</defName>
+		<label>Confederacy of Independant Systems</label>
+		<description>The Confederacy of Independent Systems (CIS), also known as the Separatist Alliance, or simply Separatists. Led by the Sith (publicly not known or recognised as such) and supported by many several large corporations, they seceeded from the Galactic Republic, only shortly after to end up in a pan-galactic war after the Republic invaded Geonosis.</description>
+		<pawnsPlural>separatists</pawnsPlural>
+		<settlementGenerationWeight>0.3</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<earliestRaidDays>35</earliestRaidDays>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>Commander</leaderTitle>
+		<permanentEnemy>false</permanentEnemy>
+		<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>
+		<fixedName>Confederacy of Independant Systems</fixedName>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<techLevel>Ultra</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<fixedLeaderKinds>
+			<li>OuterRim_Sep_General</li>
+		</fixedLeaderKinds>
+		<visitorTraderKinds>
+			<li>OuterRim_Separatist_Visitor</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+			<li>OuterRim_Separatist_Carvan</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>OuterRim_Separatist_Base</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+		  <min>-50</min>
+		  <max>45</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<OuterRim_Sep_TacticalDroid>1</OuterRim_Sep_TacticalDroid>
+					<OuterRim_Sep_DestroyerDroid>5</OuterRim_Sep_DestroyerDroid>
+					<OuterRim_Sep_BXDroid>10</OuterRim_Sep_BXDroid>
+					<OuterRim_Sep_CrabDroid>10</OuterRim_Sep_CrabDroid>
+					<OuterRim_Sep_B2Droid>25</OuterRim_Sep_B2Droid>
+					<OuterRim_Sep_B1Droid>80</OuterRim_Sep_B1Droid>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<OuterRim_Sep_TacticalDroid>1</OuterRim_Sep_TacticalDroid>
+					<OuterRim_Sep_DestroyerDroid>5</OuterRim_Sep_DestroyerDroid>
+					<OuterRim_Sep_BXDroid>5</OuterRim_Sep_BXDroid>
+					<OuterRim_Sep_CrabDroid>10</OuterRim_Sep_CrabDroid>
+					<OuterRim_Sep_B2Droid>10</OuterRim_Sep_B2Droid>
+					<OuterRim_Sep_B1Droid>30</OuterRim_Sep_B1Droid>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<OuterRim_Sep_Trader>1</OuterRim_Sep_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>4</Muffalo>
+				</carriers>
+				<guards>
+					<OuterRim_Sep_TacticalDroid>5</OuterRim_Sep_TacticalDroid>
+					<OuterRim_Sep_B2Droid>30</OuterRim_Sep_B2Droid>
+					<OuterRim_Sep_B1Droid>80</OuterRim_Sep_B1Droid>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<OuterRim_Sep_General>1</OuterRim_Sep_General>
+					<OuterRim_Sep_SuperTactical>1</OuterRim_Sep_SuperTactical>
+					<OuterRim_Sep_TacticalDroid>5</OuterRim_Sep_TacticalDroid>
+					<OuterRim_Sep_DestroyerDroid>5</OuterRim_Sep_DestroyerDroid>
+					<OuterRim_Sep_BXDroid>10</OuterRim_Sep_BXDroid>
+					<OuterRim_Sep_CrabDroid>10</OuterRim_Sep_CrabDroid>
+					<OuterRim_Sep_B2Droid>30</OuterRim_Sep_B2Droid>
+					<OuterRim_Sep_B1Droid>80</OuterRim_Sep_B1Droid>
+				</options>
+			</li>
+		</pawnGroupMakers>
+    	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<factionIconPath>OuterRim/UI/Cultures/Separatist</factionIconPath>
+        <colorSpectrum>
+            <li>RGB(62, 110, 155)</li>
+        </colorSpectrum>
+		<allowedCultures>
+			<li>Rustican</li>
+		</allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology, Neronix17.OuterRim.HokeyReligions">OuterRim_MemeBogan</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredRavenous</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_RequiredStrong</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Preferred</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Disapproved</li>
+		</disallowedPrecepts>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>30</configurationListOrderPriority>
+	</FactionDef>
+
+</Defs>
