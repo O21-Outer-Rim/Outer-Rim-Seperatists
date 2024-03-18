@@ -5,4 +5,9 @@
 		<li>1.4</li>
 		<li IfModActive="Neronix17.OuterRim.GalacticDiversity">1.4/Mods/OuterRim/GalacticDiversity</li>
 	</v1.4>
+	<v1.5>
+		<li>/</li>
+		<li>1.5</li>
+		<li IfModActive="Neronix17.OuterRim.GalacticDiversity">1.5/Mods/OuterRim/GalacticDiversity</li>
+	</v1.5>
 </loadFolders>

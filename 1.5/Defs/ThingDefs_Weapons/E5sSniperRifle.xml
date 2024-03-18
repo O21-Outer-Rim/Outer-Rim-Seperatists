@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OuterRimBlasterBase_SniperRifle">
+		<defName>OuterRim_E5sSniperRifle</defName>
+		<label>e-5s sniper rifle</label>
+		<description>A model of sniper rifle used during the Clone Wars by separatist sharpshooters.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>OuterRim/Weapons/E5SSniper</texPath>
+			<drawSize>1.2</drawSize>	
+		</graphicData>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<weaponTags>
+			<li>ORSeparatistAny</li>
+			<li>ORSeparatistSniper</li>
+			<li>ORB1BattleDroid</li>
+			<li>ORB1BattleDroidSniper</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OuterRim_SeparatistWeapons</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>OuterRim_Bullet_SniperRed</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>42</range>
+				<soundCast>OuterRim_Shot_DLT20BBlasterBolt</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>OuterRim_Bullet_E5sSniper</defName>
+		<label>blaster bolt</label>
+		<graphicData>
+			<texPath>OuterRim/Projectile/BlasterBolt_Red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>OuterRim_Blaster</damageDef>
+			<damageAmountBase>24</damageAmountBase>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ScenarioDef>
+		<defName>OuterRim_AffluentSeparatistStart</defName>
+		<label>Affluent Separatist</label>
+		<description>A wealthy member of the Separatist Alliance seeking adventure on the frontlines, you've taken it upon yourself to buy a handful of droids and decent supplies, and are now arriving on this backwater world. Surely great stories and glory will come to you for such bravery, this definitely won't have a tragic end like those neimoidians that went solar sailing only to be attacked by killer space whales...\n\nNote: Difficulty is deceptively easy, go in too confident and you may find yourself overwhelmed fast due to the initial wealth.</description>
+		<scenario>
+			<summary>An affluent separatist accompanied by various droids, aligned with the Separatists.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>OuterRim_SeparatistPlayerFaction</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+					<def>ConfigurePawnsKindDefs</def>
+					<pawnChoiceCount>1</pawnChoiceCount>
+					<leftBehindPawnKind>OuterRim_AffluentSeparatist</leftBehindPawnKind>
+					<kindCounts>
+						<li>
+							<kindDef>OuterRim_AffluentSeparatist</kindDef>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+					</kindCounts>
+				</li>
+				<li Class="Asimov.ScenPart_StartingAutomatons">
+					<def>Asimov_StartingAutomatons</def>
+					<automatonKind>OuterRim_BattleDroidAdvanced</automatonKind>
+					<count>2</count>
+				</li>
+				<li Class="Asimov.ScenPart_StartingAutomatons">
+					<def>Asimov_StartingAutomatons</def>
+					<automatonKind>OuterRim_ProtocolDroid</automatonKind>
+					<count>1</count>
+				</li>
+				<li Class="Asimov.ScenPart_StartingAutomatons">
+					<def>Asimov_StartingAutomatons</def>
+					<automatonKind>OuterRim_MSEDroid</automatonKind>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+				</li>
+				<li Class="TabulaRasa.ScenPart_ReinforcementJoins">
+					<def>TabulaRasa_ReinforcementJoins</def>
+					<intervalDays>7</intervalDays>
+					<repeat>True</repeat>
+					<pawnKind>OuterRim_BattleDroid</pawnKind>
+					<arrivalMode>DropPods</arrivalMode>
+					<faction>OuterRim_Separatists</faction>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>800</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Asimov_Chargepack</thingDef>
+					<count>50</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_DroidReactivationKit</thingDef>
+					<count>5</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_RestraintBolt</thingDef>
+					<count>8</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>45</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>OuterRim_ComponentHypertech</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>450</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>300</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<count>7</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>200</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>OuterRim_Durasteel</thingDef>
+					<count>600</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+				<!-- <li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>OuterRim_SeparatistArmory</project>
+				</li> -->
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>OuterRim_BattleDroids</project>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text />
+					<textKey>GameStartDialog</textKey>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<!-- <li Class="KCSG.ScenPart_AddStartingStructure">
+					<def>VFEC_AddStartingStructure</def>
+					<structureLabel>A small Separatist outpost with basic equipment and defences.</structureLabel>
+					<nearMapCenter>True</nearMapCenter>
+					<chooseFrom>
+						<li>OuterRim_Starter_SeparatistOutpost</li>
+					</chooseFrom>
+				</li> -->
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+</Defs>
