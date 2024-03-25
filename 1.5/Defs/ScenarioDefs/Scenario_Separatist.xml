@@ -115,10 +115,6 @@
 					<count>600</count>
 					<allowRoofed>True</allowRoofed>
 				</li>
-				<!-- <li Class="ScenPart_StartingResearch">
-					<def>StartingResearch</def>
-					<project>OuterRim_SeparatistArmory</project>
-				</li> -->
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
 					<project>OuterRim_BattleDroids</project>
