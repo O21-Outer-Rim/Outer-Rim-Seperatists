@@ -2,11 +2,11 @@
 <Defs>
 
 	<ThingDef ParentName="HypertechFabricatorBase">
-		<defName>OuterRim_HypertechFabricator_Separatist</defName>
-		<label>separatist fabricator</label>
-		<description>A hypertech work station for creating Galactic Empire equipment.</description>
+		<defName>OuterRim_HypertechFabricator_Seperatist</defName>
+		<label>seperatist fabricator</label>
+		<description>A hypertech work station for creating Confederacy of Independant Systems equipment.</description>
 		<graphicData>
-			<texPath>OuterRim/Building/SeparatistFabricationBench</texPath>
+			<texPath>OuterRim/Building/SeperatistFabricationBench</texPath>
 		</graphicData>
 		<costList Inherit="False">
 			<OuterRim_Durasteel>150</OuterRim_Durasteel>
