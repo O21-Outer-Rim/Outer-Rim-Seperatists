@@ -92,10 +92,9 @@
 		<defaultFactionType>OuterRim_Separatists</defaultFactionType>
 		<race>OuterRim_SuperBattleDroid</race>
 		<isFighter>true</isFighter>
-		<weaponTags Inherit="false" />
-		<apparelRequired>
-			<li>OuterRim_DroidWeapon_WristBlaster</li>
-		</apparelRequired>
+		<weaponTags Inherit="false">
+			<li>ORDroidWeapon_WristBlaster</li>
+		</weaponTags>
 		<combatPower>140</combatPower>
 	</PawnKindDef>
 
@@ -106,9 +105,10 @@
 		<defaultFactionType>OuterRim_Separatists</defaultFactionType>
 		<race>OuterRim_DestroyerDroid</race>
 		<isFighter>true</isFighter>
-		<weaponTags Inherit="false" />
+		<weaponTags Inherit="false">
+			<li>ORDroidWeapon_TwinWristBlaster</li>
+		</weaponTags>
 		<apparelRequired>
-			<li>OuterRim_DroidWeapon_TwinWristBlaster</li>
 			<li>OuterRim_DroidDeflectorShield</li>
 		</apparelRequired>
 		<combatPower>160</combatPower>
@@ -133,10 +133,9 @@
 		<defaultFactionType>OuterRim_Separatists</defaultFactionType>
 		<race>OuterRim_MuckrakerDroid</race>
 		<isFighter>true</isFighter>
-		<weaponTags Inherit="false" />
-		<apparelRequired>
-			<li>OuterRim_DroidWeapon_BlasterCannon</li>
-		</apparelRequired>
+		<weaponTags Inherit="false">
+			<li>ORDroidWeapon_BlasterCannon</li>
+		</weaponTags>
 		<combatPower>160</combatPower>
 		<lifeStages>
 			<li>
