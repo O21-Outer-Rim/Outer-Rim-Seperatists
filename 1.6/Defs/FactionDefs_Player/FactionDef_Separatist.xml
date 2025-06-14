@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="OuterRim_ColonyBase">
+		<defName>OuterRim_SeparatistPlayerFaction</defName>
+		<label>Separatist Outpost</label>
+		<description>Your own community.</description>
+		<basicMemberKind>OuterRim_SeparatistLeader_Player</basicMemberKind>
+		<pawnsPlural>separatists</pawnsPlural>
+	</FactionDef>
+
+</Defs>

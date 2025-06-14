@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="OuterRim_SettlerBase">
+		<defName>OuterRim_AffluentSeparatist</defName>
+		<label>separatist</label>
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<OuterRim_Neimoidian>999</OuterRim_Neimoidian>
+			</xenotypeChances>
+		</xenotypeSet>
+		<defaultFactionType>OuterRim_SeparatistPlayerFaction</defaultFactionType>
+		<combatPower>40</combatPower>
+		<minGenerationAge>20</minGenerationAge>
+		<isFighter>false</isFighter>
+		<gearHealthRange>1~1</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<weaponMoney>600~1500</weaponMoney>
+		<weaponTags Inherit="None" />
+		<apparelMoney>700~1200</apparelMoney>
+		<apparelTags>
+			<li>ORBodysuit</li>
+			<li>ORCompositeArmour</li>
+			<li>ORStunGrenadeBelt</li>
+		</apparelTags>
+		<techHediffsChance>0.15</techHediffsChance>
+		<techHediffsMoney>600~1500</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>Advanced</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>7~11</initialResistanceRange>
+	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<IdeoIconDef>
+		<defName>OuterRim_Separatist</defName>
+		<iconPath>OuterRim/UI/Cultures/Separatist</iconPath>
+	</IdeoIconDef>
+
+</Defs>
