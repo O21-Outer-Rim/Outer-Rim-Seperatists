@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<ScenarioDef>
+	<ScenarioDef ParentName="ScenarioBase">
 		<defName>OuterRim_SeparatistStart</defName>
 		<label>Separatist Droids</label>
 		<description>Your detachment arrives on this world, fresh droids from the factories sent to establish a self sufficient outpost as part of a new long term strategy. More battle droids will be sent to you regularly.</description>
@@ -133,13 +133,13 @@
 						<li>OuterRim_Starter_SeparatistOutpost</li>
 					</chooseFrom>
 				</li> -->
-				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+				<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
 					<def>VFEC_ForcedFactionGoodwill</def>
 					<factionDef>OuterRim_Separatists</factionDef>
 					<affectStartingGoodwill>True</affectStartingGoodwill>
 					<startingGoodwillRange>100~100</startingGoodwillRange>
 				</li>
-				<li Class="VFECore.ScenPart_ForcedFactionGoodwill" MayRequire="Neronix17.OuterRim.GalacticRepublic">
+				<li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill" MayRequire="Neronix17.OuterRim.GalacticRepublic">
 					<def>VFEC_ForcedFactionGoodwill</def>
 					<factionDef>OuterRim_GalacticRepublic</factionDef>
 					<affectStartingGoodwill>True</affectStartingGoodwill>

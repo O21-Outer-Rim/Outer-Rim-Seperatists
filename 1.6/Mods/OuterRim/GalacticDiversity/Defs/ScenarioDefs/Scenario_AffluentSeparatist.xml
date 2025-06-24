@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<ScenarioDef>
+	<ScenarioDef ParentName="ScenarioBase">
 		<defName>OuterRim_AffluentSeparatistStart</defName>
 		<label>Affluent Separatist</label>
 		<description>A wealthy member of the Separatist Alliance seeking adventure on the frontlines, you've taken it upon yourself to buy a handful of droids and decent supplies, and are now arriving on this backwater world. Surely great stories and glory will come to you for such bravery, this definitely won't have a tragic end like those neimoidians that went solar sailing only to be attacked by killer space whales...\n\nNote: Difficulty is deceptively easy, go in too confident and you may find yourself overwhelmed fast due to the initial wealth.</description>
