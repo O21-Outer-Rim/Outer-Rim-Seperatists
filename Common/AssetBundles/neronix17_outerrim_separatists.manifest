@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 1289393786
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 590388b35134ec0b71ff0ebb9c0c48fd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 590388b35134ec0b71ff0ebb9c0c48fd
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Neronix17.OuterRim.Separatists/Textures/OuterRim/Building/SeperatistFabricationBench_east.png
+- Assets/Data/Neronix17.OuterRim.Separatists/Textures/OuterRim/Weapons/E5_Blaster.png
+- Assets/Data/Neronix17.OuterRim.Separatists/Textures/OuterRim/Weapons/E5SSniper.png
+- Assets/Data/Neronix17.OuterRim.Separatists/Textures/OuterRim/Building/SeperatistFabricationBench_south.png
+- Assets/Data/Neronix17.OuterRim.Separatists/Textures/OuterRim/Weapons/RG4DBlaster.png
+- Assets/Data/Neronix17.OuterRim.Separatists/Textures/OuterRim/Weapons/Electrostaff_Effect.png
+- Assets/Data/Neronix17.OuterRim.Separatists/Textures/OuterRim/Building/SeperatistFabricationBench_north.png
+- Assets/Data/Neronix17.OuterRim.Separatists/Textures/OuterRim/Building/ResearchCore_Separatist.png
+- Assets/Data/Neronix17.OuterRim.Separatists/Textures/OuterRim/UI/Cultures/Separatist.png
+- Assets/Data/Neronix17.OuterRim.Separatists/Textures/OuterRim/Weapons/BXVibrosword.png
+- Assets/Data/Neronix17.OuterRim.Separatists/Textures/OuterRim/ModIcon.png
+- Assets/Data/Neronix17.OuterRim.Separatists/Textures/OuterRim/Weapons/GeonosianSonicBlaster.png
+- Assets/Data/Neronix17.OuterRim.Separatists/Textures/OuterRim/Weapons/Electrostaff.png
+Dependencies: []
