@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="OuterRim_BaseColonyPawnKind">
+		<defName>OuterRim_SeparatistLeader_Player</defName>
+		<label>tactical droid</label>
+		<race>OuterRim_TacticalDroid</race>
+		<defaultFactionType>OuterRim_SeparatistPlayerFaction</defaultFactionType>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>true</isFighter>
+		<gearHealthRange>
+			<min>1</min>
+			<max>1</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>300</min>
+			<max>1200</max>
+		</apparelMoney>
+		<apparelTags Inherit="false">
+			<li>DroidArmor</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>OuterRim_DroidArmorModule</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<stuff>OuterRim_Durasteel</stuff>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>
+			<min>40000</min>
+			<max>40000</max>
+		</weaponMoney>
+		<techHediffsMoney>
+			<min>12000</min>
+			<max>20000</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0</techHediffsChance>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>OuterRimDroidBackstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<weaponTags>
+			<li>SeparatistPistol</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="OuterRim_BaseColonyPawnKind">
+		<defName>OuterRim_SeparatistDroid_Player</defName>
+		<label>battle droid</label>
+		<race>OuterRim_BattleDroid</race>
+		<defaultFactionType>OuterRim_SeparatistPlayerFaction</defaultFactionType>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>true</isFighter>
+		<gearHealthRange>
+			<min>1</min>
+			<max>1</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>300</min>
+			<max>1200</max>
+		</apparelMoney>
+		<apparelTags Inherit="false">
+			<li>DroidArmor</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>OuterRim_DroidArmorModule</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<stuff>OuterRim_Durasteel</stuff>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>
+			<min>40000</min>
+			<max>40000</max>
+		</weaponMoney>
+		<techHediffsMoney>
+			<min>12000</min>
+			<max>20000</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0</techHediffsChance>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>OuterRimDroidBackstory</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<weaponTags Inherit="false">
+			<li>B1BattleDroid</li>
+		</weaponTags>
+	</PawnKindDef>
+
+</Defs>
